@@ -4,7 +4,7 @@
   <ClientId>{46bd1931-3004-432a-9d5d-ebd368603b0f}</ClientId>
   <DisplayName>TestProject_3</DisplayName>
   <Description>TestProject_3</Description>
-  <Assembly>C:\Users\RaNSiD\Desktop\TestProject_3\bin\TestProject_3.dll</Assembly>
+  <Assembly>C:\Users\RaNSiD\Desktop\TestProject_3\bin\Debug\TestProject_3.dll</Assembly>
   <LoadOnStartUp>1</LoadOnStartUp>
   <UserUnloadable>1</UserUnloadable>
   <Hidden>0</Hidden>
