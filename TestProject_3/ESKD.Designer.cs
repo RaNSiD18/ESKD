@@ -30,15 +30,15 @@ namespace InvAddIn
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("");
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ESKD));
             this.directorySearcher1 = new System.DirectoryServices.DirectorySearcher();
             this.lv = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cb1 = new System.Windows.Forms.ComboBox();
             this.tv = new System.Windows.Forms.TreeView();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.bu_search = new System.Windows.Forms.Button();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.listView1 = new System.Windows.Forms.ListView();
             this.SuspendLayout();
@@ -57,7 +57,7 @@ namespace InvAddIn
             this.columnHeader1});
             this.lv.HideSelection = false;
             this.lv.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
+            listViewItem3});
             this.lv.Location = new System.Drawing.Point(190, 446);
             this.lv.Name = "lv";
             this.lv.Size = new System.Drawing.Size(550, 117);
@@ -139,9 +139,9 @@ namespace InvAddIn
             // 
             this.listView1.HideSelection = false;
             this.listView1.LargeImageList = this.imageList1;
-            this.listView1.Location = new System.Drawing.Point(190, 39);
+            this.listView1.Location = new System.Drawing.Point(190, 101);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(549, 401);
+            this.listView1.Size = new System.Drawing.Size(549, 339);
             this.listView1.TabIndex = 5;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 

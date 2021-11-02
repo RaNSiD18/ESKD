@@ -8,3 +8,13 @@ C:\Users\RaNSiD\Desktop\TestProject_3\obj\Debug\InvAddIn.Properties.Resources.re
 C:\Users\RaNSiD\Desktop\TestProject_3\obj\Debug\TestProject_3.csproj.GenerateResource.cache
 C:\Users\RaNSiD\Desktop\TestProject_3\obj\Debug\InvAddIn.ESKD.resources
 C:\Users\RaNSiD\Desktop\TestProject_3\obj\Debug\TestProject_3.csproj.AssemblyReference.cache
+C:\Users\RaNSiD\Source\Repos\RaNSiD18\ESKD\TestProject_3\bin\Debug\TestProject_3.dll
+C:\Users\RaNSiD\Source\Repos\RaNSiD18\ESKD\TestProject_3\bin\Debug\TestProject_3.pdb
+C:\Users\RaNSiD\Source\Repos\RaNSiD18\ESKD\TestProject_3\bin\Debug\autodesk.inventor.interop.dll
+C:\Users\RaNSiD\Source\Repos\RaNSiD18\ESKD\TestProject_3\obj\Debug\TestProject_3.csproj.AssemblyReference.cache
+C:\Users\RaNSiD\Source\Repos\RaNSiD18\ESKD\TestProject_3\obj\Debug\InvAddIn.ESKD.resources
+C:\Users\RaNSiD\Source\Repos\RaNSiD18\ESKD\TestProject_3\obj\Debug\InvAddIn.Properties.Resources.resources
+C:\Users\RaNSiD\Source\Repos\RaNSiD18\ESKD\TestProject_3\obj\Debug\TestProject_3.csproj.GenerateResource.cache
+C:\Users\RaNSiD\Source\Repos\RaNSiD18\ESKD\TestProject_3\obj\Debug\TestProject_3.csproj.CoreCompileInputs.cache
+C:\Users\RaNSiD\Source\Repos\RaNSiD18\ESKD\TestProject_3\obj\Debug\TestProject_3.dll
+C:\Users\RaNSiD\Source\Repos\RaNSiD18\ESKD\TestProject_3\obj\Debug\TestProject_3.pdb

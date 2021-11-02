@@ -121,10 +121,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="TestProject_3.X.manifest" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Autodesk.TestProject_3.Inventor.addin" />
+    <None Include="TestProject_3.X.manifest" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Readme.txt" />
