@@ -121,6 +121,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include=".gitignore" />
     <None Include="TestProject_3.X.manifest" />
   </ItemGroup>
   <ItemGroup>
