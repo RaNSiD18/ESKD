@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3DC284CE-6572-439D-ADA3-E703FF8498B6}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>InvAddIn</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="autodesk.inventor.interop, Version=26.0.0.0, Culture=neutral, PublicKeyToken=d84147f8b4276564, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Autodesk.Inventor.Interop\v4.0_26.0.0.0__d84147f8b4276564\autodesk.inventor.interop.dll</HintPath>
+    </Reference>
+    <Reference Include="MySqlConnector, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d33d3e53aa5f8c92, processorArchitecture=MSIL">
+      <HintPath>packages\MySqlConnector.1.3.14\lib\net45\MySqlConnector.dll</HintPath>
+    </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.4.0\lib\netstandard1.1\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Memory, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.0\lib\netstandard1.1\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.4.5.0\lib\netstandard1.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.3.0\lib\portable-net45+win8+wp8+wpa81\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CheckInfo.cs" />
+    <Compile Include="ESKD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ESKD.Designer.cs">
+      <DependentUpon>ESKD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoModels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoModels.Designer.cs">
+      <DependentUpon>InfoModels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MySQL.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="StandardAddInServer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test_Spravka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test_Spravka.Designer.cs">
+      <DependentUpon>Test_Spravka.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="TestProject_3.X.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Autodesk.TestProject_3.Inventor.addin" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ESKD.resx">
+      <DependentUpon>ESKD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoModels.resx">
+      <DependentUpon>InfoModels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test_Spravka.resx">
+      <DependentUpon>Test_Spravka.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\Иконка_ЕСКД_1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\711111.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\711112.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\711113.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\711114.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\711115.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\711116.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\711117.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\711118.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\711121.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\711123-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\711125.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\711127.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\711131.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\711132-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\711133.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\711134.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\711135.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\711136.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\711137.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\711141.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\711142.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\711143.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\711145.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\721112.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\721114.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\721115.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\721116.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\drawing\711111.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\drawing\711112.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\drawing\711113.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\drawing\711114.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\drawing\711115.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\drawing\711116.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\drawing\711117.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\drawing\711118.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\drawing\711121.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\drawing\711122.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\drawing\711123.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\drawing\711124.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\drawing\711125.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\drawing\711127.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\drawing\711128.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\drawing\711131.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\drawing\711132.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\drawing\711133.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\drawing\711134.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\drawing\711135.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\drawing\711136.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\drawing\711137.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\drawing\711138.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\drawing\711141.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\drawing\711142.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\drawing\711143.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\drawing\711144.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\drawing\711145.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\drawing\721112.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\drawing\721114.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\drawing\721115.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\drawing\721116.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\drawing\731111.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\drawing\731113.JPG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>WHERE MT.EXE
+IF ERRORLEVEL 1 call "$(DevEnvDir)..\..\VC\Auxiliary\Build\vcvarsall.bat" amd64
+        mt.exe -manifest "$(ProjectDir)TestProject_3.X.manifest" -outputresource:"$(TargetPath)";#2
+			XCopy "$(TargetPath)" "%AppData%\Autodesk\ApplicationPlugins\$(TargetName)\" /Y /R
+		    XCopy "$(ProjectDir)Autodesk.TestProject_3.Inventor.addin" "%AppData%\Autodesk\ApplicationPlugins\$(TargetName)\" /Y /R   
+	</PostBuildEvent>
+  </PropertyGroup>
+</Project>
