@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+
+  <assemblyIdentity name="TestProject_3" version="1.0.0.0"></assemblyIdentity>
+
+  <clrClass clsid="{46bd1931-3004-432a-9d5d-ebd368603b0f}" progid="TestProject_3.StandardAddInServer" threadingModel="Both" name="TestProject_3.StandardAddInServer" runtimeVersion=""></clrClass>
+
+  <file name="TestProject_3.dll" hashalg="SHA1"></file>
+
+</assembly>
